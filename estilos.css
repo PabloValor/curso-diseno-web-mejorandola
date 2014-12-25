@@ -54,6 +54,20 @@ body
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 }
+
+form.formulario {
+	display: none;
+	padding: 1em;
+	text-align: right;
+}
+.formulario input {
+	border: 1px solid #CCC;
+	border-radius: .3em;
+	padding: .6em;
+}
+.formulario input[type="submit"] {
+	margin-left: .5em;
+}
 footer
 {
 	background: #22BCE0;

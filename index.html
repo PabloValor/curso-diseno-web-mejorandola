@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="description" content="Proyecto de la primera generación del 2014 del curso de diseño web online" />
-	<meta name="viewport" content="width=device-width, minimum-scale=1, max-scale=1">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 	<title>Puls2014: Comunidad de magos blancos atractivos y sexies</title>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="normalize.css" />
@@ -33,6 +33,11 @@
 			</li>
 		</ul>
 	</nav>
+	<form action="" method="GET" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="titulo" required />
+		<input type="url" id="url" placeholder="link" required />
+		<input type="submit" value="Agregar">
+	</form>
 	<aside>
 		<video width="320" height="240" autoplay>
 			<source src="videos/lecturas.mp4" type="video/mp4">
@@ -206,6 +211,8 @@
 			mejorando.la 2014
 		</p>
 	</footer>
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/formulario.js"></script>
 </body>
 </html>
 
