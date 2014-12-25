@@ -1,3 +1,4 @@
+/* icons font */
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot?e2ncxt');
@@ -41,7 +42,7 @@
 	margin-right: .5em;
 }
 
-/* End icons font */
+/* /icons font */
 
 a
 {
@@ -195,7 +196,7 @@ nav ul #publicar_nav a
 #contenido .item .imagen_item img
 {
 	width: 180px;
-	height: 128px;
+	max-height: 128px;
 }
 #contenido .item .titulo_item
 {
@@ -227,4 +228,18 @@ nav ul #publicar_nav a
 #contenido .item .votacion .guardar_item
 {
 	float: right;
+}
+
+@media screen and (min-width: 800px) {
+	#contenido {
+		overflow: hidden;
+	}
+	#contenido .item {
+		display: inline-block;
+		float: left;
+		width: 49%;
+	}
+	#contenido .item:nth-child(odd) {
+		margin-right: 2%;
+	}
 }
