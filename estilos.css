@@ -25,15 +25,20 @@
 
 .icon-star-half:before {
 	content: "\e9d8";
+	color: gold;
+	margin-right: .2em;
 }
 .icon-circle-up:before {
 	content: "\ea41";
+	color: green;
 }
 .icon-circle-down:before {
 	content: "\ea43";
+	color: red;
 }
 .icon-pen:before {
 	content: "\e600";
+	margin-right: .5em;
 }
 
 /* End icons font */
@@ -111,6 +116,8 @@ header #logo img
 nav
 {
 	background: #80BCA3;
+	border-bottom: 5px solid rgb(93, 129, 114);
+	padding: 0 6em 0 0;
 	position: relative;
 }
 nav ul
@@ -212,6 +219,9 @@ nav ul #publicar_nav a
 	position: absolute;
 	right: 3%;
 	top: 100%;
+}
+#contenido .votacion a {
+	text-decoration: none;
 }
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
