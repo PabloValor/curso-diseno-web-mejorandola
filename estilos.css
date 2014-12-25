@@ -230,6 +230,16 @@ nav ul #publicar_nav a
 	float: right;
 }
 
+aside {
+	display: none;
+	float: right;
+	margin: 1em;
+	width: 20%;
+}
+aside video {
+	width: 100%;
+}
+
 @media screen and (min-width: 800px) {
 	#contenido {
 		overflow: hidden;
@@ -241,5 +251,11 @@ nav ul #publicar_nav a
 	}
 	#contenido .item:nth-child(odd) {
 		margin-right: 2%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	aside {
+		display: block;
 	}
 }
