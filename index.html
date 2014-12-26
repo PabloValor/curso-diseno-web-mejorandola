@@ -29,7 +29,7 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-pen">Publicar</a>
+				<a href="#" data-nombre="pablo" class="icon-pen">Publicar</a>
 			</li>
 		</ul>
 	</nav>
@@ -40,7 +40,8 @@
 	</form>
 	<aside>
 		<video width="320" height="240" autoplay>
-			<source src="videos/lecturas.mp4" type="video/mp4">
+			<source src="videos/lecturas.m4v" type="video/m4v">
+			<source src="videos/lecturas.webm" type="video/webm">
 		  	<source src="videos/lecturas.ogg" type="video/ogg">
 			<p>Tu navegador no soporta video HTML5. Comprame apocalipsis o pudrete!</p>
 		</video>		
@@ -213,6 +214,18 @@
 	</footer>
 	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script src="js/formulario.js"></script>
+	<!--
+	<script>
+		$(function(){
+			$('#publicar_nav a').on('click', function(tito) {
+				tito.preventDefault();
+				$(this).toggleClass('disabled');
+				var data = $(this).data();
+				$(this).data('apellido', 'rigazzi');
+			});
+		});
+	</script>
+	-->
 </body>
 </html>
 

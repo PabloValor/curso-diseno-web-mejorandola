@@ -169,6 +169,11 @@ nav ul li a
 	-webkit-transition: .3s;
 	-moz-transition: .3s;
 }
+nav ul #publicar_nav a.disabled {
+	background-color: grey;
+	cursor: default;
+	box-shadow: none;
+}
 nav ul li a:hover {
 	background: rgb(93, 129, 114);
 }
@@ -293,6 +298,13 @@ aside video {
 	}
 	#contenido .item:nth-child(odd) {
 		margin-right: 2%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.formulario input {
+		display: block;
+		margin: .6em;
 	}
 }
 
